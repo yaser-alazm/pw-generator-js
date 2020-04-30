@@ -1,0 +1,79 @@
+body {
+  background-color: #444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container {
+  background-color: #55bdf1;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: solid 5px #006699;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container .pw-placeholder {
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 350px;
+  min-height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  word-wrap: break-all;
+}
+/* Styling the form using flex-box*/
+/* .container form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container form .input-wrapper {
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+} */
+
+/* Styling the form using grid*/
+.container form {
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 1rem;
+  column-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.container form .input-wrapper {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.container form button {
+  background: transparent;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.container form button:hover {
+  background-color: white;
+  transition: ease-in-out 0.3s;
+}
+
+.container form label {
+  font-weight: bold;
+}
